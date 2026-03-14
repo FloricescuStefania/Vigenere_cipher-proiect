@@ -1,0 +1,15 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+*.sdf
+*.db
+
+# Build outputs
+Debug/
+Release/
+*.exe
+*.obj
+*.o
+*.log
