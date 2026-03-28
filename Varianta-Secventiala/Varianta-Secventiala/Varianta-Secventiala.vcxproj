@@ -130,7 +130,11 @@
     <ClCompile Include="secventiala.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="Beauty_And_The_Beast_14KB.txt" />
+    <Text Include="Beauty_And_The_Beast_19KB.txt" />
+    <Text Include="Beauty_And_The_Beast_32KB.txt" />
+    <Text Include="Beauty_And_The_Beast_47KB.txt" />
+    <Text Include="Beauty_And_The_Beast_5KB.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

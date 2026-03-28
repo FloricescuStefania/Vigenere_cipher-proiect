@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <chrono>
 
 class VigenereCipher 
 {
@@ -102,17 +103,32 @@ int main() {
     std::cout << "Introduceti cheia: ";
     std::cin >> key;
 
-    std::string text = readFile("input.txt");
+    std::string text = readFile("Beauty_And_The_Beast_47KB.txt");
 
     VigenereCipher cipher(key);
 
-    //criptare si scriere in fisier
+    //masuram timpul pentru criptare
+    auto startEnc = std::chrono::high_resolution_clock::now();
     std::string encrypted = cipher.encrypt(text);
+    auto endEnc = std::chrono::high_resolution_clock::now();
+
+    //criptare si scriere in fisier
     writeFile("encrypted.txt", encrypted);
 
-    //decriptare si scriere in fisier
+    auto durationEnc = std::chrono::duration_cast<std::chrono::milliseconds>(endEnc - startEnc);
+    std::cout << "Timp criptare: " << durationEnc.count() << " ms\n";
+
+    //masuram timpul pentru decriptare
+    auto startDec = std::chrono::high_resolution_clock::now();
     std::string decrypted = cipher.decrypt(encrypted);
+    auto endDec = std::chrono::high_resolution_clock::now();
+
+    //decriptare si scriere in fisier
     writeFile("decrypted.txt", decrypted);
+
+    //afisare timp
+    auto durationDec = std::chrono::duration_cast<std::chrono::milliseconds>(endDec - startDec);
+    std::cout << "Timp decriptare: " << durationDec.count() << " ms\n";
 
 
     return 0;

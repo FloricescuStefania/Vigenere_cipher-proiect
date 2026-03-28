@@ -20,6 +20,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="Beauty_And_The_Beast_5KB.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Beauty_And_The_Beast_14KB.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Beauty_And_The_Beast_19KB.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Beauty_And_The_Beast_32KB.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Beauty_And_The_Beast_47KB.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
