@@ -130,11 +130,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Beauty_And_The_Beast_100KB.txt" />
-    <Text Include="Beauty_And_The_Beast_19KB.txt" />
-    <Text Include="Beauty_And_The_Beast_32KB.txt" />
-    <Text Include="Beauty_And_The_Beast_56KB.txt" />
-    <Text Include="Beauty_And_The_Beast_70KB.txt" />
+    <Text Include="Beauty_And_The_Beast_10MB.txt" />
+    <Text Include="Beauty_And_The_Beast_15MB.txt" />
+    <Text Include="Beauty_And_The_Beast_1MB.txt" />
+    <Text Include="Beauty_And_The_Beast_20MB.txt" />
+    <Text Include="Beauty_And_The_Beast_5MB.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

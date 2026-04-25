@@ -103,7 +103,7 @@ int main() {
     std::cout << "Introduceti cheia: ";
     std::cin >> key;
 
-    std::string text = readFile("Beauty_And_The_Beast_70KB.txt");
+    std::string text = readFile("Beauty_And_The_Beast_20MB.txt");
 
     VigenereCipher cipher(key);
 

@@ -58,7 +58,7 @@ private:
         size_t n = text.length();
         std::string result(n, '\0');
 
-        //nr de thread-uri luate din 
+        //nr de thread-uri luate  
         size_t numThreads = std::thread::hardware_concurrency();
         //daca nu se da nr de thread-uri setam implicit la 4
         if (numThreads == 0) numThreads = 4;
@@ -134,7 +134,7 @@ int main()
 
     std::cout << "Thread-uri disponibile: " << std::thread::hardware_concurrency() << "\n";
 
-    std::string text = readFile("Beauty_And_The_Beast_100KB.txt");
+    std::string text = readFile("Beauty_And_The_Beast_1MB.txt");
 
     VigenereCipher cipher(key);
 
